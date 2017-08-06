@@ -9,6 +9,6 @@ class TestCommand {
 	 * @when before_wp_load
 	 */
 	public function __invoke() {
-		\WP_CLI::success( 'Version C.' );
+		\WP_CLI::success( 'Version D.' );
 	}
 }
