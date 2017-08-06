@@ -1,0 +1,34 @@
+{
+    "name": "schlessera/test-command",
+    "description": "Test command used for testing the package manager.",
+    "type": "wp-cli-package",
+    "homepage": "http://wp-cli.org/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alain Schlesser",
+            "email": "alain.schlesser@gmail.com",
+            "homepage": "https://www.alainschlesser.come",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "files": [ "command.php" ],
+        "psr-4": {
+            "AlainSchlesser\\TestCommand\\": "src/"
+        }
+    },
+    "require": {
+        "wp-cli/wp-cli": "*"
+    },
+    "require-dev": {
+        "behat/behat": "~2.5"
+    },
+    "extra": {
+        "commands": [
+            "test-command"
+        ]
+    }
+}
