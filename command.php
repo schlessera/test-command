@@ -11,5 +11,5 @@ if ( is_readable( $autoloader ) ) {
 
 \WP_CLI::add_command(
 	'test-command',
-	TestCommand::class
+	'WP_CLI_Test\TestCommand\TestCommand'
 );
